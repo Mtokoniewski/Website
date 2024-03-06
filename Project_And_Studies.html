@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Okoniewski Portfolio</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css", type="text/css">
+
+
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="Home.html"> Home </a>
+        <a href="Contact.html">Contact</a>
+        <a class="active" href="Project_And_Studies.html">Projects and Studies</a>
+        <a href="About.html">About</a>
+        <a href="MTO-CV.pdf" download="Maciej Okoniewski CV" target="_blank">CV</a>
+        <p> M Okoniewski Portfolio &ensp;
+        </p> </div>
+        <div class="wrapper">
+          <p><br></p>
+          <h1>My Projects</h1>
+    
+          
+          <div class="faq">
+            <button class="accordion">
+              Website 
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>Tada!<br> I made this website by myself using HTML and a little bit of javascript.
+              </p>
+            </div>
+          </div>
+          
+          <div class="faq">
+            <button class="accordion">
+              Calculator, Snake and Stopwatch
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>It can be a little daunting and confusing, at first, to bring your program to life outside your terminal box and do something on screen. The following projects have a purpose, and that purpose is to demonstrate ability to create a program that can be used by a person who has no idea how to create one. 
+              <br>
+              Personally, I enjoy my terminal boxes. They have certain beauty to them, to work purely with numbers. Regardless, I can create interface that anyone within a company could use for their own needs. 
+              </p>
+              <video width="500" height="280" autoplay muted controls loop>
+                <source src="Assets/Calculator.mp4" type="video/mp4">
+              </video>
+              <video width="500" height="280" autoplay muted controls loop>
+                <source src="Assets/Snake.mp4" type="video/mp4">
+              </video>
+              <video width="500" height="280" autoplay muted controls loop>
+                <source src="Assets/Stopwatch.mp4" type="video/mp4">
+              </video>
+              <p></p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              Face Detection Program
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>This application was build using opencv dataset build with use of machine learning. The application is capable of tracking front facing face, as that is the specific dataset used. Other datasets such as face profiles do exist, and can be substituted or added to the app. </p>
+              <video width="500" height="280" autoplay muted controls loop>
+                <source src="Assets/Face Detection.mp4" type="video/mp4">
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+                Maven Pizza and Tableau Dashboard
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              Fun With Excel: Create Pay Sheets
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>This little nifty program allows to quickly create personalized timesheets for each employee within the company. The program does not allow anyone to clock their hours before the starting time, but it does automatically erase lateness of less than 5 minutes. 
+              <br>
+              The program presented was prepared with simplified mock data. The program is capable of differentiating by months, weeks, and other time periods. Selecting specific date informs program to use the date as a starting point.
+              </p>
+              <video width="500" height="280" autoplay muted controls loop>
+                <source src="Assets/Hours Processor.mp4" type="video/mp4">
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              Quick and Dirty: Fill excel reports
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+              <p>Not everyone likes to type information into an Excel Sheet - Especially if the information in question are categorical or repetetive. <br>
+                With this writer, you can input data into excel, specifying your own personal shortcuts. 
+              </p>
+              <video width="500" height="280" autoplay muted controls loop>
+                <source src="Assets/Excel Writer.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+      
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+      
+                var pannel = this.nextElementSibling;
+      
+                if (pannel.style.display === "block") {
+                  pannel.style.display = "none";
+                } else {
+                  pannel.style.display = "block";
+                }
+              });
+            }
+          </script>
+</div>
+</body>
+</html>
+
